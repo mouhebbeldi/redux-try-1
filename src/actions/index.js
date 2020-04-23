@@ -1,8 +1,9 @@
-// action creator
-export const selectSong = song => {
-  // returning a action :
-  return {
-    type: "SONG_SELECTED",
-    payload: song
-  };
-};
+import jsonplaceholder from '../apis/jsonplaceholder' 
+export const fetchPosts=()=>{
+    // bad approach
+    const promise=  jsonplaceholder.get('/posts')
+    return {
+        type:'FETCH_POSTS',
+        payload:promise
+    }
+}

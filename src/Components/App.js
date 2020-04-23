@@ -1,19 +1,17 @@
 import React from "react";
 import "../styles.css";
-import SongList from "./SongList";
-import SongDetail from "./SongDetail";
-
+import PostList from './PostList'
 const App = () => {
+
+  const postsURL='';
+  const users='https://jsonplaceholder.typicode.com/users';
+
   return (
-    <div className="ui container grid">
-      <div className="ui row">
-        <div className="colum">
-          <SongList />
-        </div>
-        <div className="colum">
-          <SongDetail />
-        </div>
-      </div>
+    <div className="ui container">
+    
+        <PostList/>
+    
+    
     </div>
   );
 };
