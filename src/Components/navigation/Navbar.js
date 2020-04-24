@@ -126,7 +126,7 @@ const Navbar = () => {
                   <path fill="currentColor" d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z" className="fa-primary" />
                 </g>
               </svg>
-              <label for="theme-toggler" className= {`ui toggle button nav-item ${darkModeEnabled ?'dark-btn' : ''}`}>
+              <label htmlfor="theme-toggler" className= {`ui toggle button nav-item ${darkModeEnabled ?'dark-btn' : 'white-btn'}`}>
                 <input
                 className='nav-item'
                     className='hidden-checkbox'

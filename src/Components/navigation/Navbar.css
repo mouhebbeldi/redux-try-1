@@ -1,5 +1,5 @@
 :root {
-    font-size: 13px;
+    font-size: .8rem;
     /* font-family: 'Open Sans'; */
     font-family: monospace;
     --text-primary: #b6b6b6;
@@ -7,12 +7,22 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    
 
   }
   .dark-btn{
       background-color: var(--bg-secondary) !important;
       color: var(--text-primary) !important;
   }
+  .white-btn {
+    background-color: #f5e5b8 !important;
+    color: var(--text-primary) !important;
+  }
+  .white-btn:hover{
+    background-color: #d3c397 !important;
+    color: var(--text-primary) !important;
+  }
+
   .dark-btn:hover{
     color:  #df49a6 !important;
 
@@ -41,11 +51,11 @@
   }
   
   body::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: #f5e5b8;
   }
   
   body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #fdf6e3;
   }
   
   main {
@@ -59,7 +69,8 @@
     position: fixed;
     background-color: var(--bg-secondary);
     transition: width 400ms ease;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     font-size: 10px;
   }
   
@@ -159,7 +170,8 @@
     .navbar {
       bottom: 0;
       width: 100vw;
-      height: 5rem;
+      height:auto;
+      overflow:hidden;
     }
   
     .logo {
@@ -185,6 +197,7 @@
       top: 0;
       width: 5rem;
       height: 100vh;
+      overflow:hidden ;
     }
   
     .navbar:hover {
