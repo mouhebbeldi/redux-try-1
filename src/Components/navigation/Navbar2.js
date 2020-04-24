@@ -1,7 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Navbar2.css'
 
 const Navbar2 = () => {
+
+
+    const  openNav= ()=> {
+        document.getElementById("mobile__menu").style.width = "100%";
+      }
+      
+      const  closeNav =() =>{
+        document.getElementById("mobile__menu").style.width = "0";
+      }
+      
     return (
         <div>
         <header>
@@ -14,10 +24,10 @@ const Navbar2 = () => {
             </ul>
           </nav>
           <a className="cta" href="#">Contact</a>
-          <p onclick="openNav()" className="menu cta">Menu</p>
+          <p onclick={openNav} className="menu cta">Menu</p>
         </header>
         <div id="mobile__menu" className="overlay">
-          <a className="close" onclick="closeNav()">×</a>
+          <a className="close" onclick={closeNav}>×</a>
           <div className="overlay__content">
             <a href="#">Services</a>
             <a href="#">Projects</a>
