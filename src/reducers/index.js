@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-
-
+import postsReducer from './postsReducer'
+import usersReducer from './usersReducer'
 
 export default combineReducers({
-
-  
-  songs: ()=>'songsReducer',
-  selectedSong : ()=>'selectedSongReducer'
+  posts:postsReducer,
+  users:usersReducer  
 });
